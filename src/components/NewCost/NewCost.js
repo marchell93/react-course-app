@@ -4,8 +4,8 @@ import "./NewCost.css";
 const NewCost = (props) => {
   const saveCostDataHandler = (inputCostData) => {
     const costData = {
-      ...inputCostData,
       id: Math.random().toString(),
+      ...inputCostData,
     };
 
     props.onAddCost(costData);
