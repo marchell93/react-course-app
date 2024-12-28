@@ -33,6 +33,10 @@ const CostForm = (props) => {
     setInputDate("");
   };
 
+  const hideShowForm = () => {
+    props.onHideForm();
+  };
+
   return (
     <div>
       <form onSubmit={submitHandler}>
@@ -63,6 +67,9 @@ const CostForm = (props) => {
           </div>
           <div className="new-cost__actions">
             <button type="submit">Добавить Расход</button>
+            <button type="button" onClick={hideShowForm}>
+              Отменить
+            </button>
           </div>
         </div>
       </form>
