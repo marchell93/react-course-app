@@ -1,4 +1,5 @@
 import CostItem from "./CostItem";
+import "./CostList.css";
 
 const CostList = (props) => {
   if (props.costs.length === 0) {
