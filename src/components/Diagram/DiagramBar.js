@@ -16,8 +16,8 @@ const DiagramBar = (props) => {
             height: barFillHeight,
           }}
         ></div>
-        <div className="diagram-bar__label">{props.label}</div>
       </div>
+      <div className="diagram-bar__label">{props.label}</div>
     </div>
   );
 };

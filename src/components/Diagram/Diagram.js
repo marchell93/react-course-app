@@ -9,7 +9,7 @@ const Diagram = (props) => {
     <div className="diagram">
       {props.dataSets.map((dataSet) => (
         <DiagramBar
-          key={dataSet.id}
+          key={dataSet.label}
           value={dataSet.value}
           maxValue={maxMonthCosts}
           label={dataSet.label}
